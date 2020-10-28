@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #333;
 }
 
 .mobile-nav {
@@ -315,8 +315,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #428bca;
+  color: #5B7A32;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .mobile-nav .drop-down > a:after {
@@ -617,6 +618,8 @@ section {
   font-size: 32px;
 }
 
+
+
 .about .icon-box:hover .icon {
   background: #5B7A32;
   border-color: #5B7A32;
@@ -633,8 +636,8 @@ section {
   font-size: 18px;
 }
 
-.about .icon-box .title a {
-  color: #343a40;
+.about .icon-box .btn-link{
+  color: #5B7A32 !important;
   transition: 0.3s;
 }
 
@@ -653,7 +656,6 @@ section {
   background-size: cover;
   width: 500px;
   min-height: 300px;
-  margin-right: 150px;
   /* position: absolute;
   left: 380px;
   top: 150px; */
@@ -758,6 +760,21 @@ section {
   }
 }
 
+.about .icon-boxes a{
+  color: #5B7A32;
+  position: relative;
+}
+
+.about .icon-boxes a:hover::after{
+  content: "";
+  position: absolute;
+  background-color: #5B7A32;
+  width: 50%;
+  height: 2px;
+  display: none;
+}
+
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -846,7 +863,7 @@ tbody tr td:first-child {
   margin-bottom: 60px;
   background: #f1f1f1;
   margin-right: 20px;
-  padding: 20px 15px;
+  padding: 20px 10px;
 }
 
 
@@ -857,7 +874,6 @@ tbody tr td:first-child {
 }
 
 .services .title {
-  margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
@@ -873,7 +889,6 @@ tbody tr td:first-child {
 }
 
 .services .description {
-  margin-left: 60px;
   line-height: 24px;
   font-size: 14px;
 }
