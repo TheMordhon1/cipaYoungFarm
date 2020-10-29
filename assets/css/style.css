@@ -118,10 +118,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 3px 16px 0px rgba(87,86,86,0.2);
 }
 
-#header.header-scrolled .nav-menu a, .nav-menu .active > a {
+#header.header-scrolled .nav-menu a:not(.active) {
   color: #333;
 }
-#header.header-scrolled .nav-menu a:hover, .nav-menu .active > a {
+
+ 
+#header.header-scrolled .nav-menu a:hover{
   color: #5B7A32;
 }
 
@@ -180,10 +182,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+ .nav-menu .active > a {
   color: #5B7A32;
   font-weight: 700;
   font-size: 14px;
+  background: #fff;
+  padding: 2px;
+  border-radius: 10px;
 }
 
 /* .nav-menu .drop-down ul {
@@ -267,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
-  top: 16px;
+  top: 23px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -280,8 +285,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #333;
+  color: #333; 
 }
+
+.icofont-navigation-menu{
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 
 .mobile-nav {
   position: fixed;
@@ -808,6 +820,8 @@ section {
 tbody tr td:first-child {
   text-align: center;
 }
+
+
 /*--------------------------------------------------------------
 # End Table
 --------------------------------------------------------------*/
