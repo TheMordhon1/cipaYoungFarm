@@ -91,15 +91,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   width: 40px;
   height: 40px;
-  border-radius: 4px;
+  border-radius: 50px;
   background: #5B7A32;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #5697d0;
-  color: #fff;
+  background: #fff;
+  color: #5B7A32;
+  border: 1px solid #5B7A32
 }
 
 /*--------------------------------------------------------------
